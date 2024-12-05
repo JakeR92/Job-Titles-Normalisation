@@ -69,7 +69,8 @@ The weighting system is designed to give greater confidence to partial matches t
 
 The `Normaliser` class is responsible for normalising job titles by matching input titles to their closest equivalent standardised titles.
 
-![[Title Normalisation.png]]
+<img src="./Title%20Normalisation.png" alt="Title Normalisation" width="50%" />
+
 #### Constructor
 
 - **`Normaliser(Map<String, Set<String>> normalisedMap)`**  
@@ -113,7 +114,8 @@ The `Normaliser` class is responsible for normalising job titles by matching inp
 
 The `ConsecutiveMatchBonusCalculator` class calculates a bonus for consecutive matches of tokens within a title.
 
-![[Consecutive Match Bonus Calculator.png]]
+<img src="./Consecutive%20Match%20Bonus%20Calculator.png" alt="Consecutive Match Bonus Calculator.png" width="50%" />
+
 #### Methods
 
 - **`protected static void calculateConsecutiveMatchBonus(Map<String, Integer> scores, String[] tokens)`**  
