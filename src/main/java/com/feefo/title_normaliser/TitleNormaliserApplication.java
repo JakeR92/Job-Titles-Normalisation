@@ -1,5 +1,6 @@
 package com.feefo.title_normaliser;
 
+import java.util.Optional;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,9 +8,19 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TitleNormaliserApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TitleNormaliserApplication.class, args);
-
-		System.out.println("ahahhhhh");
+		String jt = "Java engineer";
+		Normaliser n = new Normaliser();
+		Optional<String> normalisedTitle = n.normalise(jt);
+		//output normalisedTitle
+		System.out.println(normalisedTitle);
+		jt = "C# engineer";
+		normalisedTitle = n.normalise(jt);
+		//output normalisedTitle
+		System.out.println(normalisedTitle);
+		jt = "Chief Accountant";
+		normalisedTitle = n.normalise(jt);
+		//output normalisedTitle
+		System.out.println(normalisedTitle);
 	}
 
 }
