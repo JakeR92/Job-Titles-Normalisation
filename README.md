@@ -475,7 +475,7 @@ The following test scenarios cover various conditions for the `ConsecutiveMatchB
 - **Example**:
     - Input:
         - Tokens: `{"new!", "senior", "full", "stck", "software", "engineer", "with", "cloud", "computing", "expertise"}`
-        - Scores: `{"Senior Full Stack Software Engineer specializing in Cloud Computing": 024
+        - Scores: `{"Senior Full Stack Software Engineer specializing in Cloud Computing": 24}
     - Expected Output:
         - The score for `"Senior Full Stack Software Engineer specializing in Cloud Computing"` is updated to `36`.
 
